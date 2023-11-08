@@ -7,6 +7,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <version>1.0</version>
   <packaging>war</packaging>
 
+	<properties>
+		<sonar.host.url>http://127.0.0.7:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>password</sonar.password>
+	</properties>
+	
   <dependencies>
 
      <dependency>
