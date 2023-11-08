@@ -7,11 +7,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <version>1.0</version>
   <packaging>war</packaging>
 
-	<properties>
-		<sonar.host.url>http://127.0.0.7:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>password</sonar.password>
-	</properties>
 	
   <dependencies>
 
@@ -29,8 +24,34 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+	  
+</dependencies>
+	
+	<properties>
+		<sonar.host.url>http://127.0.0.7:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>password</sonar.password>
+	</properties>
+	
+<distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <name>Nexus Repository release </name>
+        <url>http://127.0.0.7:8081/repository/Walmart-releases</url>
+     </repository>
 
-    </dependencies>
+<snapshotRepository>
+	<id>nexus</id>
+        <name>Nexus Repository snapshot</name>
+        <url>http://127.0.0.7:8081/repository/Walmart-snapshot/</url>
+</snapshotRepository>
+   
+</distributionManagement> 
+    
+	
+	
+
+	
     <build>
 	<plugins>
 		
