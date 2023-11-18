@@ -37,13 +37,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <repository>
         <id>nexus</id>
         <name>Nexus Repository release </name>
-        <url>http://127.0.0.7:8081/repository/Walmart-releases</url>
+        <url>http://127.0.0.1:8081/repository/walmart-release/</url>
      </repository>
 
 <snapshotRepository>
 	<id>nexus</id>
         <name>Nexus Repository snapshot</name>
-        <url>http://127.0.0.7:8081/repository/Walmart-snapshot/</url>
+        <url>http://127.0.0.1:8081/repository/walmart-snapshot/</url>
 </snapshotRepository>
    
 </distributionManagement> 
